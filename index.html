@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <!-- Demo : https://bit.ly/3NOr9nD -->
+
+    <header class="text-center">
+        <div class="container  py-5">
+            <h1>
+                <span>Bookmarker</span>
+            </h1>
+        </div>
+    </header>
+
+    <section id="form" class=" text-center">
+        <div class="container ">
+            <h2 class="pb-5 pt-3">
+                <i class="fa fa-regular fa-bookmark"></i>
+                Bookmark your favorite sites
+                <i class="fa fa-regular fa-bookmark"></i>
+            </h2>
+
+            <div class="inputs text-start fw-bold">
+                <div>
+                    <div class="mb-3">
+                        <label class="form-label" for="bookmark"><i class="fa fa-solid fa-book"></i> <span>Site Name</span></label>
+                        <input id="bookmark" class="form-control focus-ring-warning" type="text" name="name" placeholder="Bookmark Name">
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label" for="url"><i class="fa fa-solid fa-chain"></i> <span>Site URL</span></label>
+                        <input id="url" class="form-control focus-ring-warning" type="url" name="url" placeholder="Website URL">
+                    </div>
+                </div>
+            </div>
+
+            <button onclick="addBookmark()" class="btn btn-danger px-5 mb-4">Submit</button>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <table class="table my-4 text-center">
+                <thead>
+                    <tr>
+                        <th>Index</th>
+                        <th>Website Name</th>
+                        <th class="w-25">Visit</th>
+                        <th class="w-25">Delete</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>abood</td>
+                        <td>
+                            <button class="btn btn-success"><i class="fa fa-solid fa-eye"></i> Visit</button>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger"><i class="fa fa-solid fa-trash"> Delete</i></button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+
+</html>

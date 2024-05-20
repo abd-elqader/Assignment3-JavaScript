@@ -1,0 +1,52 @@
+#form div.container {
+    border-top: 2px dotted ;
+    border-bottom: 2px dotted;
+}
+
+body {
+    background-color: #F7ECDE;
+}
+
+h1 {
+    color: #352E28;
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;   
+}
+
+h2 {
+    color: transparent;
+    background : linear-gradient(to right,green,yellow);
+    background-clip: text;
+    /* background : -webkit-linear-gradient(#eee, #333); */
+}
+
+h1 span {
+    position: relative;
+}
+
+h1 span::after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    bottom: 20%;
+    background-color: #FEC260;
+    z-index: -1;
+    transition: all .5s;
+}
+
+h1:hover span::after {
+    top:20%;
+}
+
+::selection {
+    background: #FEC260;
+}
+
+.form-control:focus {
+
+    border-color: #d99c39;
+    box-shadow: 0 0 0 0.25rem #a8824355;
+}
