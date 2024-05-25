@@ -28,9 +28,9 @@
     <section id="form" class=" text-center">
         <div class="container ">
             <h2 class="pb-5 pt-3">
-                <i class="fa fa-regular fa-bookmark"></i>
+                <i class="fa fa-solid fa-bookmark"></i>
                 Bookmark your favorite sites
-                <i class="fa fa-regular fa-bookmark"></i>
+                <i class="fa fa-solid fa-bookmark"></i>
             </h2>
 
             <div class="inputs text-start fw-bold">
@@ -45,32 +45,42 @@
                     </div>
                 </div>
             </div>
-
-            <button onclick="addBookmark()" class="btn btn-danger px-5 mb-4">Submit</button>
+            <div id="actionButton">
+                <button onclick="addBookmark()" class="btn btn-danger px-5 mb-4">Submit</button>
+            </div>
         </div>
     </section>
     <section>
         <div class="container">
+            <label class="m-3">
+                <span>search</span>
+                <input type="text" class="form-control col-6">
+            </label>
             <table class="table my-4 text-center">
                 <thead>
                     <tr>
                         <th>Index</th>
                         <th>Website Name</th>
-                        <th class="w-25">Visit</th>
-                        <th class="w-25">Delete</th>
+                        <th>Visit</th>
+                        <th>Edit</th>
+                        <th>Delete</th>
                     </tr>
                 </thead>
                 <tbody id="body">
                     <!-- <tr>
                         <td>1</td>
                         <td>abood</td>
+                        
                         <td>
                             <a href="https://www.google.com/" target="_blank" class="btn btn-success"><i class="fa fa-solid fa-eye"></i> Visit</a>
                         </td>
                         <td>
-                            <a onclick="deleteItem()" class="btn btn-danger"><i class="fa fa-solid fa-trash"> Delete</i></a>
+                            <a href="https://www.google.com/" target="_blank" class="btn btn-warning"><i class="fa fa-solid fa-edit"></i> edit</a>
                         </td>
-                    </tr> -->
+                        <td>
+                            <a onclick="deleteItem()" class="btn btn-danger"><i class="fa fa-solid fa-trash"> Delete</i></a>
+                        </td> 
+                    </tr>-->
                 </tbody>
             </table>
         </div>
